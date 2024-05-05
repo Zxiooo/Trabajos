@@ -1,0 +1,333 @@
+/*---------- Fuentes ----------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*---------- Paletas de Colores ----------*/
+
+#interes {
+    color: rgb(250, 252, 157);
+}
+
+.colores-a-usar{ 
+
+    /*Oscuro:*/
+    color: rgba(20, 20, 20,0.95);
+
+    /*Celeste Medio Claro:*/
+    color:rgb(130, 253, 237);
+
+    /*Morado Opaco:*/
+    color:rgba(122, 93, 255, 0.1);
+
+    /*Morado Claro:*/
+    color:rgba(122, 93, 255, 0.55);
+
+}
+
+/*---------- Cuerpo ----------*/
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('../imagenes/fondo.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+/*---------- Responsive ----------*/
+
+@media (max-width: 1300px) {
+    header {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    nav {
+        padding: 10px 0; 
+    }
+
+    .head-logo img {
+        margin-right: 5px; 
+    }
+
+    .container {
+        width: 90%; 
+        margin: 20px auto; 
+    }
+
+    .trabajo-imagenes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; 
+    }
+
+    .trabajo-imagenes img {
+        max-width: 100%;
+        height: auto;
+        margin: 10px; 
+    }
+}
+
+/*---------- Encabezado ----------*/
+
+header{
+    display: flex;
+    min-height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+}
+
+.head-titulo{
+    color: white;
+}
+
+.head-logo{
+    display: flex;
+    align-items: center;
+}
+
+.head-logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    margin-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(130, 253, 237);
+}
+
+/*---------- Contenedor ----------*/
+
+.container {
+    color: rgb(130, 253, 237);
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container h2 {
+    color: rgb(130, 253, 237);;
+}
+
+/*---------- Inicio -----------*/
+
+.inicio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.inicio .container h2{
+    font-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.inicio .container p{
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 30px;
+    margin-right: 30%;
+    margin-left: 30%;
+    padding: 10px;
+    background-color: rgba(122, 93, 255, 0.1);
+    border: 1px solid rgba(122, 93, 255, 0.55);
+}
+
+.regalia {
+    flex: 1;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+.btn-registro {
+    display: inline-block;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-registro:hover {
+    background-color: rgba(122, 93, 255, 0.55);
+}
+
+/*---------- Quienes somos ----------*/
+
+.quienes-somos{
+    color: rgb(130, 253, 237);;
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 200px;
+}
+
+.acerca {
+    padding: 20px;
+}
+
+.acerca .container {
+    padding-right: 10px;
+    background-color: rgba(122, 93, 255, 0.1);
+    border: 1px solid rgba(122, 93, 255, 0.55);
+    border-radius: 30px;
+    font-size: 20px;
+    width: 50%;
+}
+
+.acerca .container img{
+    max-width: 200px; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto;
+}
+
+/*---------- Nuestro Trabajo ----------*/
+
+.nuestro-trabajo {
+    color: rgb(130, 253, 237);;
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 16px;
+}
+
+
+.trabajo{
+    margin-top: 30px;
+}
+
+.trabajo .container {
+    background-color: rgba(122, 93, 255, 0.1);
+    border: 1px solid rgba(122, 93, 255, 0.55);
+    margin-top: 20px; 
+    padding: 30px;
+    border-radius: 30px;
+    width: 75%;
+}
+
+.trabajo-imagenes {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.trabajo-imagenes img {
+    max-width: 300px; 
+    height: auto; 
+    margin-right: 5px;
+}
+
+.trabajo-imagenes .imagen-ajuste1 {
+    max-width: 600px; 
+    height: auto; 
+    margin-right: 5px; 
+} 
+
+/*---------- Registro ----------*/
+
+.estas-interesado{
+    color: rgb(130, 253, 237);
+    font-size: 27px;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.registro{
+    background-color: rgba(122, 93, 255, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+    border: 1px solid rgba(122, 93, 255, 0.55);
+}
+
+.logo-final img{
+    max-width: 80px; 
+    height: auto;
+    display: block; 
+    margin: 0;
+    float: right;
+}
+
+/*---------- Formulario ----------*/
+
+.formulario{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border-radius: 20px;
+    border: 20px;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    color: rgb(130, 253, 237);
+    font-size: 18px;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="checkbox"],
+.formulario button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid rgba(122, 93, 255, 0.9);
+    border-radius: 4px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(130, 253, 237);
+    font-size: 17px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.formulario button[type="submit"] {
+    background-color: rgb(20, 20, 20);
+    border-radius: 4px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button[type="submit"]:hover {
+    background-color: rgba(122, 93, 255, 0.55);
+}
+
+.formulario a{
+    color:  rgb(250, 252, 157);
+}
+
