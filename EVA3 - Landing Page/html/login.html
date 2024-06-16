@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="../css/login.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+        <title>Login</title>
+    </head>
+    <body>
+        <header>
+            <div class="head-logo">
+                <img src="../imagenes/logo.png" alt="Logo de la Empresa">
+                <h3 class="head-titulo">RealityFiction3D</h3>
+            </div>
+            <nav>
+                <a href="../index.html" class="nav-link">Inicio</a>
+            </nav>
+        </header>
+        <h2>Iniciar Sesion</h2>
+        <section class="registro">
+            <div class="formulario">
+                <form>
+                    <label for="usuario">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario" required>
+                    <label for="contraseña">Contraseña:</label>
+                    <input type="password" id="contraseña" name="contraseña" required>
+                    <a href="../index.html">¿Olvidaste tu cotraseña?</a>
+                    <input type="button" value="Iniciar sesión" onclick="validarLogin()">
+                </form>
+            </div>
+        </section>
+
+        <script src="../js/login.js"></script>
+    </body>
+</html>
