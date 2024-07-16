@@ -1,0 +1,181 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/* Paletas de Colores */
+#interes {
+    color: rgb(250, 252, 157);
+}
+
+.colores-a-usar {
+    /*Oscuro:*/
+    color: rgba(20, 20, 20, 0.95);
+    /*Celeste Medio Claro:*/
+    color: rgb(130, 253, 237);
+    /*Morado Opaco:*/
+    color: rgba(122, 93, 255, 0.1);
+    /*Morado Claro:*/
+    color: rgba(122, 93, 255, 0.55);
+}
+
+/* Cuerpo */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    background-image: url('../imagenes/fondo.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html,
+body {
+    overflow-x: hidden;
+}
+
+header {
+    display: flex;
+    min-height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+}
+
+/* Encabezado */
+.head-titulo {
+    color: white;
+}
+
+.head-logo {
+    display: flex;
+    align-items: center;
+}
+
+.head-logo img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    margin-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: rgb(130, 253, 237);
+}
+
+/* Contenedor principal */
+.admin-container {
+    color: white;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.titulo-admin{
+    text-align: center;
+    color: rgb(130, 253, 237);
+}
+
+
+/* Formulario de producto */
+.product-form {
+    background-color: rgb(5, 5, 5,0.9);
+    border: 1px solid rgba(122, 93, 255, 0.55);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-form label {
+    display: block;
+    margin-bottom: 10px;
+    color: rgb(130, 253, 237);
+}
+
+.product-form input[type="text"],
+.product-form input[type="number"],
+.product-form select {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(122, 93, 255, 0.9);
+    border-radius: 4px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(130, 253, 237);
+    font-size: 16px;
+}
+
+.product-form button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(20, 20, 20);
+    color: rgb(130, 253, 237);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-form button:hover {
+    background-color: rgba(122, 93, 255, 0.55);
+}
+
+/* Lista de productos */
+.product-list {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.product-list th,
+.product-list td {
+    border: 1px solid rgba(122, 93, 255, 0.55);
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.product-list th {
+    background-color: rgba(20, 20, 20, 0.9);
+}
+
+.product-list td button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+}
+
+.delete-btn {
+  background-color: red;
+  color: white;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.product-list td button.delete-btn {
+    background-color: red;
+    color: white;
+}
+
+.product-list td button.edit-btn {
+    background-color: green;
+    color: white;
+}
+
+.product-list td button:hover {
+    opacity: 0.8;
+}

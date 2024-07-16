@@ -1,0 +1,264 @@
+/*---------- Fuentes ----------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+/*---------- Paletas de Colores ----------*/
+#interes {
+    color: rgb(250, 252, 157);
+}
+
+.colores-a-usar{ 
+    color: rgba(20, 20, 20,0.95);
+    color: rgb(130, 253, 237);
+    color: rgba(122, 93, 255, 0.1);
+    color: rgba(122, 93, 255, 0.55);
+}
+
+/* Estilos para el catálogo */
+
+body{
+    font-family: sans-serif;
+    margin: 0;
+    background-image: url('../imagenes/fondo.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    min-height: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(20, 20, 20);
+}
+
+.head-titulo{
+    color: white;
+}
+
+.head-logo{
+    display: flex;
+    align-items: center;
+}
+
+.head-logo img{
+    height: 50px;
+    margin-right: 10px;
+}
+
+nav a{
+    font-weight: 600;
+    margin-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover{
+    color: rgb(130, 253, 237);
+}
+
+#abrir-carrito {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    border-radius: 15px;
+    border: 1px solid rgba(122, 93, 255, 0.1);;
+    transition: background-color 0.3s ease;
+}
+
+#abrir-carrito:hover {
+    background-color: rgba(0, 0, 0, 0.568);
+  }
+
+  .catalogo-container {
+    display: flex;
+    padding: 20px;
+  }
+  
+  .category-sidebar {
+    position: relative;
+    flex: 0 0 200px;
+    margin-right: 20px;
+    background-color: rgba(122, 93, 255, 0.1);
+    border: 1px solid rgba(122, 93, 255, 0.9);
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .category-sidebar h3 {
+    margin-top: 10px;
+    color: white;
+  }
+  
+  .category-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    color: rgb(130, 253, 237);
+    font-size: 19px;
+    margin-top: 10px;
+  }
+  
+  .category-sidebar li {
+    cursor: pointer;
+    margin-bottom: 5px;
+    border: 1px solid rgba(122, 93, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.568);
+    border-radius: 2px;
+  }
+  
+  .small-button {
+    background-color: rgb(20, 20, 20);
+    color: rgb(130, 253, 237);
+    font-size: 16px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 15px;
+    margin-top: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    width: 100%; /* Ajusta la anchura al 100% del contenedor */
+    box-sizing: border-box; /* Incluye padding y borde en el tamaño */
+    transition: background-color 0.3s ease;
+  }
+  
+  .small-button:hover {
+    background-color: rgba(122, 93, 255, 0.55);
+  }
+  
+  .product-list {
+    flex: 1;
+  }
+  
+  .product-item {
+    border: 1px solid rgba(122, 93, 255, 0.9);
+    background-color: rgba(0, 0, 0, 0.568);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    margin-left: 15px;
+    color: rgb(250, 252, 157);
+    font-size: 17px;
+  }
+  
+  .product-item h4 {
+    margin-top: 5px;
+    color: white;
+    font-size: 19px;
+  }
+  
+  .acciones-producto {
+    margin-top: 10px;
+  }
+  
+  .anadir-carrito-btn {
+    background-color: rgb(20, 20, 20);
+    color: rgb(130, 253, 237);
+    transition: background-color 0.3s ease;
+    border: none;
+    padding: 5px 20px;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 17px;
+  }
+  
+  .anadir-carrito-btn:hover {
+    background-color: rgba(122, 93, 255, 0.55);
+  }
+  
+  .carrito {
+    position: fixed;
+    right: 20px;
+    top: 70px;
+    background-color: rgba(10, 10, 10, 0.85);
+    border-radius: 10px;
+    border: 2px solid rgba(122, 93, 255, 0.9);
+    color: rgb(130, 253, 237);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: none; /* Inicialmente oculto */
+    z-index: 1000;
+    padding: 20px;
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
+  }
+  
+  .carrito h2 {
+    margin-top: 0;
+  }
+  
+  .carrito ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  .carrito p {
+    margin-top: 10px;
+  }
+  
+  .carrito button {
+    background-color: rgb(20, 20, 20);
+    color: rgb(130, 253, 237);
+    transition: background-color 0.3s ease;
+    border: none;
+    font-size: 15px;
+    padding: 10px 15px;
+    margin-top: 10px;
+    
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .carrito button:hover {
+    background-color: rgba(122, 93, 255, 0.55);
+  }
+  
+/* Comprobante de compra */
+.comprobante {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fffffff8;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  border: 2px solid rgba(122, 93, 255, 0.1);
+}
+
+.comprobante h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.comprobante button {
+  background-color: rgb(20, 20, 20);
+  color: rgb(130, 253, 237);
+  transition: background-color 0.3s ease;
+  border: none;
+  padding: 8px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.comprobante button:hover {
+  background-color: rgba(122, 93, 255, 0.55);
+}
+
+  
